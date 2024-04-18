@@ -1,0 +1,32 @@
+p.bold{
+    font-weight: bold;
+}
+p.large{
+    font-size: large;
+}
+div.main_content{
+    width: 98%;
+    min-height: 700px;
+    margin-left: 1%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+	background-color: rgba(255, 255, 255, 0.75);
+    word-break: normal;
+}
+
+body{
+    background-image: url(Background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+img.right_corner{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    float: right;
+}
