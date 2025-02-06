@@ -1,0 +1,5 @@
+Баг-1
+Метод contains возвращает False вместо True при вызове contains("", "")
+
+Баг-2
+Метод is_empty возвращает True вместо False при вызове is_empty('\t')

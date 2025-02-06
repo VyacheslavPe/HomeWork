@@ -105,8 +105,8 @@ contains
 """
 
 @pytest.mark.parametrize('a, b, expect', [('asd', 'с', False),
-                                          ('', '', True)])
-def test_contains_negativee(a, b, expect):
+                                          ('', '', False)])
+def test_contains_negative(a, b, expect):
     stringUtils = StringUtils()
     res = stringUtils.contains(a, b)
     assert res == expect
@@ -196,7 +196,7 @@ is_empty
 """
 
 @pytest.mark.parametrize('a, expect', [('', True),
-                                          (' ',True)])
+                                       (' ',True)])
 def test_is_empty_positive(a, expect):
     stringUtils = StringUtils()
     res = stringUtils.is_empty(a)
@@ -209,7 +209,9 @@ is_empty
 
 @pytest.mark.parametrize('a, expect', [('asd', False),
                                        ('абв',False),
-                                       ('123',False)])
+                                       ('123',False),
+                                       ('   ',True),
+                                       ('\t',True),])
 def test_is_empty_negative(a, expect):
     stringUtils = StringUtils()
     res = stringUtils.is_empty(a)
